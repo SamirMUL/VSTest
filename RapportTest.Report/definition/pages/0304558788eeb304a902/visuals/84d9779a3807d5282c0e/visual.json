@@ -1,0 +1,66 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.5.0/schema.json",
+  "name": "84d9779a3807d5282c0e",
+  "position": {
+    "x": 219.11696359411309,
+    "y": 177.47482571649886,
+    "z": 0,
+    "height": 328.1797056545314,
+    "width": 450.13168086754456,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "octopus_spla_export_new"
+                        }
+                      },
+                      "Property": "installed_software_name"
+                    }
+                  },
+                  "Function": 5
+                }
+              },
+              "queryRef": "Min(octopus_spla_export_new.installed_software_name)",
+              "nativeQueryRef": "Nombre de installed_software_name"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "octopus_spla_export_new"
+                      }
+                    },
+                    "Property": "installed_software_name"
+                  }
+                },
+                "Function": 5
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
