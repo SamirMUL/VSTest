@@ -1,6 +1,10 @@
 table octopus_spla_export_new
 	lineageTag: 7b1bf836-588b-44a1-8748-92da64d468d6
 
+	measure Mesure = 1
+		formatString: 0
+		lineageTag: 7f9924cc-e3a2-49a7-8b9e-198d57cc1b1a
+
 	column context
 		dataType: string
 		lineageTag: a2599793-3364-4dad-ac3f-db967b2c48b6
